@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Common
 
 class StoreFront {
     static let name = "StoreFront"

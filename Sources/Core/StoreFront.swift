@@ -9,6 +9,23 @@
 import Foundation
 import Common
 
-class StoreFront {
+public class StoreFront: Module {
+    
     static let name = "StoreFront"
+    
+    public init() {}
+    
+    public lazy var tabBarItem: UITabBarItem? = {
+        return UITabBarItem(title: "Store Front", image: nil, selectedImage: nil)
+    }()
+    
+    public lazy var viewController: UIViewController = {
+        let vc = UIViewController()
+        vc.view.backgroundColor = UIColor.red
+        if let tabBarItem = self.tabBarItem {
+            vc.tabBarItem = tabBarItem
+        }
+        return vc
+    }()
+    
 }

@@ -9,7 +9,7 @@
 import Foundation
 import Common
 
-public class StoreFront: Module {
+public class StoreFrontModule: Module {
     
     static let name = "StoreFront"
     
